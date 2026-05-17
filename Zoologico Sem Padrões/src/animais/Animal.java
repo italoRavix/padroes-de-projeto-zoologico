@@ -61,4 +61,10 @@ public class Animal
     {
         this.id = ++count;
     } 
+    
+    @Override 
+    public String toString()
+    {
+    return String.format("ID: %d%nNome da especie: %s%nDieta: %s%nSexo: %c%nIdade: %d%n", getId(), getEspecie().getNome(), getEspecie().getDieta(), getSexo(), getIdadeMeses());    
+    }
 }

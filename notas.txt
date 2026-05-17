@@ -19,10 +19,16 @@ ________________________________
 |--ConsumivelRepteisCarnivorosFactory
 
 
-			Mamiferos Carnivoros | Mamiferos Herbivoros | Repteis Carnivoros | Repteis Herbivoros
+			     Mamiferos Carnivoros | Mamiferos Herbivoros | Repteis Carnivoros | Repteis Herbivoros
 Ração
 Suplemento
 Medicação
+
+			     MICO | CAPIVARA | JACARE | SERPENTE |... 
+Ração
+Suplemento
+CoberturaSolo
+
 
 
 SOBRE LAZY E CLASS E DATA CLASS DA PRA FAZER O SEGUINTE: CRIAR UMA CLASSE DE ANIMAL QUE SEJA APENAS UM AMONTOADO DE DADOS DO ANIMAL E UMA CLASSE SEPARADA QUE SIRVA APENAS PARA CONFERIR SE A DIETA DO ANIMAL FOI CORRETA, DA PRA CONSERTAR COLOCANDO ESSE COMPORTAMENTO DENTRO DO ANIMAL

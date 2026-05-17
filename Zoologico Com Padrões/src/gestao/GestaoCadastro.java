@@ -9,7 +9,7 @@ import cadastro.*;
 /* Essa classe poderia ter diversos métodos para lidar com a gestão de fichas de cadastro */
 public abstract class GestaoCadastro
 {
-    ArrayList<FichaCadastro> cadastros = new ArrayList<>();
+    private List<FichaCadastro> cadastros = new ArrayList<>();
     
     /* Regra de negocio */
     public void cadastrar(Especie especie) 
@@ -24,7 +24,7 @@ public abstract class GestaoCadastro
         inserir(fichaCadastro);
     }
     
-    public ArrayList<FichaCadastro> getCadastros()
+    public List<FichaCadastro> getCadastros()
     {
         return cadastros;
     }

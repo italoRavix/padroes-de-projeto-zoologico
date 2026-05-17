@@ -17,7 +17,7 @@ public class Teste
         g.cadastrar(Especie.SERPENTE);  
         g.cadastrar(Especie.JACARE);        
         
-        ArrayList<FichaCadastro> cadastros = g.getCadastros();
+        List<FichaCadastro> cadastros = g.getCadastros();
         
         for(FichaCadastro c : cadastros)
             System.out.println(c.toString());

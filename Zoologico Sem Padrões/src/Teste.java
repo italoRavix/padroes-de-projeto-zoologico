@@ -13,11 +13,11 @@ public class Teste
         GestaoCadastro g = new GestaoCadastro();
         
         g.cadastrar(Especie.MICO);
-        g.cadastrar(Especie.CAPIVARA);
+        g.cadastrar(Especie.CAPIVARA);        
         
         ArrayList<FichaCadastro> cadastros = g.getCadastros();
         
         for(FichaCadastro c : cadastros)
-            System.out.println(c.getAnimal().getEspecie().getNome());
+            System.out.println(c.toString());
     }
 }

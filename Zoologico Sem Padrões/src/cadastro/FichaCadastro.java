@@ -2,6 +2,8 @@ package cadastro;
 
 import animais.*;
 
+/* Essa classe poderia ter diversos atributos relativos à relatorios medicos, alergias, observaçoes, etc */
+/* Também poderia ter diversos métodos para lidar com esses atributos */
 public class FichaCadastro
 {
     private int id;
@@ -35,7 +37,11 @@ public class FichaCadastro
     public void atualizaNecessitaDesmame(Animal animal)
     {
         animal.setNecessitaDesmame(!(animal.getNecessitaDesmame()));
-    }    
+    }
     
-    /*  Demais metodos como relatorios medicos, alergias, observações */
+    @Override
+    public String toString()
+    {
+        return String.format("FICHA: %d%n%s", getId(), getAnimal().toString());
+    }    
 }
