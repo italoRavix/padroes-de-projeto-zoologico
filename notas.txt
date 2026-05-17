@@ -1,0 +1,28 @@
+Eu preciso de um código para implementar o modulo de alimentação dos animais.
+- Os animais podem ser: Pequenos Mamiferos Carnivoros, Pequenos Mamiferos Herbivoros, Pequenos Repteis Carnivoros, Pequenos Repteis Herbivoros, Grandes Mamiferos Carnivoros, Grandes Mamiferos Herbivoros, Grandes Repteis Carnivoros, Grandes Repteis Herbivoros. Cada um tem sua dieta própria.
+- Os animais se alimentam um numero diferente de vezes por dia, podendo ser 1, 2 ou 3 vezes
+
+
+
+ConsumivelFactory 
+-createRacao(): Raçao
+-createSuplemento(): Refeiçao
+-createMedicamento(): Medicamento
+________________________________
+| | | |
+| | | |--ConsumivelMamiferosHerbivorosFactory
+| | |
+| | |--ConsumivelMamiferosCarnivorosFactory
+| |
+| |--ConsumivelRepteisHerbivorosFactory
+|
+|--ConsumivelRepteisCarnivorosFactory
+
+
+			Mamiferos Carnivoros | Mamiferos Herbivoros | Repteis Carnivoros | Repteis Herbivoros
+Ração
+Suplemento
+Medicação
+
+
+SOBRE LAZY E CLASS E DATA CLASS DA PRA FAZER O SEGUINTE: CRIAR UMA CLASSE DE ANIMAL QUE SEJA APENAS UM AMONTOADO DE DADOS DO ANIMAL E UMA CLASSE SEPARADA QUE SIRVA APENAS PARA CONFERIR SE A DIETA DO ANIMAL FOI CORRETA, DA PRA CONSERTAR COLOCANDO ESSE COMPORTAMENTO DENTRO DO ANIMAL
