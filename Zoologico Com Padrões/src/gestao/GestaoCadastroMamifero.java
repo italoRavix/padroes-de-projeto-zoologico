@@ -3,6 +3,7 @@ package gestao;
 import animais.*;
 import cadastro.*;
 
+/* Classe concreta */
 public class GestaoCadastroMamifero extends GestaoCadastro
 {
     @Override

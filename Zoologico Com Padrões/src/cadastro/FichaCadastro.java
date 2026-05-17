@@ -2,14 +2,14 @@ package cadastro;
 
 import animais.*;
 
+/* Essa classe poderia ter diversos atributos relativos à relatorios medicos, alergias, observaçoes, etc */
+/* Também poderia ter diversos métodos para lidar com esses atributos */
 public abstract class FichaCadastro
 {
     private int id;
     private Animal animal;
     
     private static int count = 100;
-    
-    /*  Demais atributos como relatorios medicos, alergias, observações */
     
     public int getId()
     {
@@ -31,5 +31,4 @@ public abstract class FichaCadastro
         this.id = ++count;    
     }
     
-    /*  Demais metodos como relatorios medicos, alergias, observações */
 }
