@@ -2,13 +2,14 @@ package animais;
 
 import especie.Especie;
 
-public abstract class Animal
+public class Animal
 {
     private int id;
     private Especie especie;
     private char sexo;
     private int idadeMeses;
     private static int count = 0;
+    private boolean necessitaDesmame;
     
     public int getId()
     {
@@ -43,12 +44,21 @@ public abstract class Animal
     public void setIdadeMeses(int idadeMeses)
     {
         this.idadeMeses = idadeMeses;
-    }    
+    }   
+    
+    public boolean getNecessitaDesmame()
+    {
+        return necessitaDesmame;
+    }
+    
+    public void setNecessitaDesmame(boolean necessitaDesmame)
+    {
+        this.necessitaDesmame = necessitaDesmame;
+    }      
     
     // deve ser protected para permitir que as subclassem incrementem o id   
     protected void incrementaId()
     {
         this.id = ++count;
-    }
-    
+    } 
 }

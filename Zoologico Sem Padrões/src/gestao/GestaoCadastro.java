@@ -1,5 +1,3 @@
-/* GESTAO CADASTRO PARA SER MODIFICADO!!!!!!!!!!!*/
-
 package gestao;
 
 import java.util.List;
@@ -7,8 +5,6 @@ import java.util.ArrayList;
 import animais.*;
 import especie.*;
 import cadastro.*;
-
-/* GESTAO CADASTRO PARA SER MODIFICADO!!!!!!!!!!!*/
 
 public class GestaoCadastro
 {
@@ -19,12 +15,10 @@ public class GestaoCadastro
         Animal animal = new Animal(); /* Inicio do ponto acoplamento, codigo depende de Animal para tudo */
         animal.setEspecie(especie);
         
-        FichaCadastro = new FichaCadastro(animal);
+        FichaCadastro fichaCadastro = new FichaCadastro(animal);
         
         inserir(fichaCadastro);
     }
-    
-/* GESTAO CADASTRO PARA SER MODIFICADO!!!!!!!!!!!*/    
     
     public ArrayList<FichaCadastro> getCadastros()
     {
@@ -35,5 +29,4 @@ public class GestaoCadastro
     {
         cadastros.add(fichaCadastro);
     }
-/* GESTAO CADASTRO PARA SER MODIFICADO!!!!!!!!!!!*/    
 }
