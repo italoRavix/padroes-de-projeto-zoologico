@@ -20,6 +20,6 @@ public class Teste
         ArrayList<FichaCadastro> cadastros = g.getCadastros();
         
         for(FichaCadastro c : cadastros)
-            System.out.println(c.getAnimal().getEspecie().getNome());
+            System.out.println(c.toString());
     }
 }

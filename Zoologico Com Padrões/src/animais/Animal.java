@@ -51,4 +51,10 @@ public abstract class Animal
         this.id = ++count;
     }
     
+    @Override
+    public String toString()
+    {
+        return String.format("ID: %d%nNome da especie: %s%nDieta: %s%nGrupo: %s%nSexo: %c%nIdade: %d%n", getId(), getEspecie().getNome(), getEspecie().getDieta(), getEspecie().getGrupo(), getSexo(), getIdadeMeses());
+    }
+    
 }

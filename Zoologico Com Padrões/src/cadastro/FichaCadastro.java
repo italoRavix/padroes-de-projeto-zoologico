@@ -31,4 +31,10 @@ public abstract class FichaCadastro
         this.id = ++count;    
     }
     
+    @Override
+    public String toString()
+    {
+        return String.format("FICHA: %d%n%s", getId(), getAnimal().toString());
+    }
+    
 }
